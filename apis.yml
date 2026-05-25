@@ -1,0 +1,148 @@
+aid: drift-com
+url: https://raw.githubusercontent.com/api-evangelist/drift-com/refs/heads/main/apis.yml
+name: Drift
+kind: company
+description: Drift is a conversational marketing and sales platform delivering AI-powered chatbots, live chat,
+  video messaging, account-based engagement, and Fastlane playbook automation on B2B websites. Drift was
+  acquired by Salesloft in 2024 and now operates as the AI conversation surface within the Salesloft Revenue
+  Orchestration Platform; the drift.com domain redirects to salesloft.com/platform/drift while devdocs.drift.com
+  continues to host the developer API documentation.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Conversational Marketing
+- Chatbots
+- Sales
+- Messaging
+- Customer Engagement
+- Revenue Orchestration
+- AI Chat
+created: '2026-05-25'
+modified: '2026-05-25'
+specificationVersion: '0.19'
+apis:
+- aid: drift-com:drift-rest-api
+  name: Drift REST API
+  description: Drift REST API covers contacts, users, conversations and messages, accounts, playbooks, teams,
+    app admin tokens, data privacy (GDPR retrieval and deletion), and SCIM provisioning. Webhook events deliver
+    realtime conversation, contact, and message updates. Authentication uses OAuth, App Admin Tokens, and signed
+    identities as documented at devdocs.drift.com.
+  image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+  humanURL: https://devdocs.drift.com/
+  baseURL: https://driftapi.com
+  tags:
+  - Messaging
+  - Chatbots
+  - REST
+  - Conversations
+  - SCIM
+  properties:
+  - type: Documentation
+    url: https://devdocs.drift.com/
+  - type: APIReference
+    url: https://devdocs.drift.com/reference
+  - type: Authentication
+    url: https://devdocs.drift.com/docs/authentication
+  - type: OpenAPI
+    url: openapi/drift-com-openapi.yml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-accounts.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-app-admin.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-contacts.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-conversations-and-messages.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-data-privacy.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-playbooks.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-scim-api.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-teams.yaml
+  - type: NaftikoCapability
+    url: capabilities/drift-com-users.yaml
+common:
+- type: Website
+  url: https://www.drift.com/
+- type: Documentation
+  url: https://devdocs.drift.com/
+- type: LLMsTxt
+  url: https://devdocs.drift.com/llms.txt
+- type: Portal
+  url: https://app.drift.com/
+- type: GitHubOrganization
+  url: https://github.com/Driftt
+- type: SDK
+  url: https://github.com/Driftt/drift-python
+- type: SDK
+  url: https://github.com/Driftt/drift-sdk-android
+- type: SDK
+  url: https://github.com/Driftt/drift-sdk-ios
+- type: Integrations
+  url: https://www.salesloft.com/platform/drift
+- type: LinkedIn
+  url: https://www.linkedin.com/company/drift
+- type: Plans
+  url: plans/drift-com-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/drift-com-rate-limits.yml
+- type: FinOps
+  url: finops/drift-com-finops.yml
+- type: Features
+  data:
+  - name: AI Chat Agent
+    description: Real-time, personalized AI conversations that engage website visitors and qualify leads.
+  - name: Fastlane Playbooks
+    description: Form automation and conversational experiences that route qualified leads using tech-stack
+      enrichment data.
+  - name: Live Chat
+    description: Human-handoff live chat tied into the rep workflow inside Salesloft Rhythm.
+  - name: Video Messaging
+    description: One-to-one and one-to-many video messages embedded in conversations and account workflows.
+  - name: Account-Based Engagement
+    description: Target accounts, route conversations to owners, and report on pipeline impact at the account
+      level.
+  - name: Webhooks
+    description: Realtime delivery of conversation, message, and contact events to subscribed endpoints.
+  - name: SCIM Provisioning
+    description: SCIM 2.0 API for identity-provider-driven user provisioning and deprovisioning.
+  - name: GDPR Data Privacy
+    description: APIs to retrieve and delete personal data on request for GDPR compliance.
+- type: UseCases
+  data:
+  - name: Inbound Lead Qualification
+    description: Convert anonymous website visitors into qualified pipeline using AI chat plus Fastlane
+      routing.
+  - name: ABM Conversation Routing
+    description: Route conversations from target accounts to the correct rep based on owner mapping and
+      account hierarchy.
+  - name: Meeting Booking
+    description: Book qualified meetings directly into rep calendars from the chat surface.
+  - name: Post-Sale Customer Engagement
+    description: Use chat and video to drive product adoption, renewal conversations, and customer success
+      workflows.
+- type: Integrations
+  data:
+  - name: Salesloft
+    description: Native integration; Drift conversations flow into Salesloft Rhythm cadences and the Revenue
+      Orchestration Platform.
+  - name: Salesforce
+    description: Bi-directional sync of contacts, accounts, opportunities, and conversation activity.
+  - name: HubSpot
+    description: Contact and conversation sync with HubSpot CRM and Marketing Hub.
+  - name: Marketo
+    description: Lead routing and program sync with Marketo Engage.
+  - name: Slack
+    description: Conversation notifications, routing, and rep response from Slack channels and DMs.
+- type: Solutions
+  data:
+  - name: Drift for Marketing
+    description: Conversational marketing surface for demand-gen teams targeting B2B pipeline.
+  - name: Drift for Sales
+    description: Live chat plus video for AEs and SDRs running ABM and inbound motion.
+  - name: Drift for Service
+    description: Customer-facing chat for support and customer success teams.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
