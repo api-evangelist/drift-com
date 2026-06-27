@@ -51,17 +51,17 @@ common:
     url: https://www.drift.com/
   - type: Documentation
     url: https://devdocs.drift.com/
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://devdocs.drift.com/llms.txt
   - type: Portal
     url: https://app.drift.com/
   - type: GitHubOrganization
     url: https://github.com/Driftt
-  - type: SDK
+  - type: SDKs
     url: https://github.com/Driftt/drift-python
-  - type: SDK
+  - type: SDKs
     url: https://github.com/Driftt/drift-sdk-android
-  - type: SDK
+  - type: SDKs
     url: https://github.com/Driftt/drift-sdk-ios
   - type: Integrations
     url: https://www.salesloft.com/platform/drift
