@@ -47,6 +47,10 @@ apis:
       - type: OpenAPI
         url: openapi/drift-com-openapi.yml
 common:
+  - type: DomainSecurity
+    url: security/drift-com-domain-security.yml
+  - type: Authentication
+    url: authentication/drift-com-authentication.yml
   - type: Website
     url: https://www.drift.com/
   - type: Documentation
