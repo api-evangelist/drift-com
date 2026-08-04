@@ -1,0 +1,30 @@
+{
+  "provider": "drift-com",
+  "sources": [
+    "drift-com-accounts-api-openapi.yml",
+    "drift-com-app-admin-api-openapi.yml",
+    "drift-com-contacts-api-openapi.yml",
+    "drift-com-conversations-and-messages-api-openapi.yml",
+    "drift-com-data-privacy-api-openapi.yml",
+    "drift-com-playbooks-api-openapi.yml",
+    "drift-com-scim-api-api-openapi.yml",
+    "drift-com-teams-api-openapi.yml",
+    "drift-com-users-api-openapi.yml"
+  ],
+  "outputs": [
+    "drift-com-accounts-api-openapi.yml",
+    "drift-com-app-admin-api-openapi.yml",
+    "drift-com-contacts-api-openapi.yml",
+    "drift-com-conversations-and-messages-api-openapi.yml",
+    "drift-com-data-privacy-api-openapi.yml",
+    "drift-com-playbooks-api-openapi.yml",
+    "drift-com-scim-api-api-openapi.yml",
+    "drift-com-teams-api-openapi.yml",
+    "drift-com-users-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
