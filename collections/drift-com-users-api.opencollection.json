@@ -1,0 +1,98 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts Users API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Users",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift Fetch a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/users/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a user"
+        },
+        {
+          "info": {
+            "name": "Drift List all users",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/users/list"
+          },
+          "docs": "Drift List all users"
+        },
+        {
+          "info": {
+            "name": "Drift Update a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "http://{{base_url}}/users/update",
+            "params": [
+              {
+                "name": "userId",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Update a user"
+        },
+        {
+          "info": {
+            "name": "Drift Fetch booked meetings",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/users/meetings/org",
+            "params": [
+              {
+                "name": "min_start_time",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max_start_time",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Drift Fetch booked meetings"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

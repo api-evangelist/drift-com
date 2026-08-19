@@ -1,0 +1,62 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts App Admin API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "App Admin",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift Trigger app uninstall",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/app/uninstall",
+            "params": [
+              {
+                "name": "clientId",
+                "value": ":clientId",
+                "type": "query"
+              },
+              {
+                "name": "clientSecret",
+                "value": ":clientSecret",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Drift Trigger app uninstall"
+        },
+        {
+          "info": {
+            "name": "Drift Get token information",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/app/token_info",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Get token information"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

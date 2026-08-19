@@ -1,0 +1,46 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts Playbooks API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Playbooks",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift List playbooks",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/playbooks/list"
+          },
+          "docs": "Drift List playbooks"
+        },
+        {
+          "info": {
+            "name": "Drift List conversational landing pages (CLP)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/playbooks/clp"
+          },
+          "docs": "Drift List conversational landing pages (CLP)"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

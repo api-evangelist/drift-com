@@ -1,0 +1,205 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts Conversations and Messages API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Conversations and Messages",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift Fetch a conversation's messages",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/conversations/:id/messages",
+            "params": [
+              {
+                "name": "next",
+                "value": "",
+                "type": "query",
+                "description": "Page number where page sizes are always 50"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "The Drift conversationId"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a conversation's messages"
+        },
+        {
+          "info": {
+            "name": "Drift Create a message",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/conversations/:id/messages",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "The Drift conversationId"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Create a message"
+        },
+        {
+          "info": {
+            "name": "Drift Fetch a conversation",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/conversations/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "The Drift conversationId"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a conversation"
+        },
+        {
+          "info": {
+            "name": "Drift Fetch a conversation's transcript as a string",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/conversations/:id/transcript",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "The Drift conversationId"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a conversation's transcript as a string"
+        },
+        {
+          "info": {
+            "name": "Drift Fetch a conversation's transcript as a JSON object",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/conversations/:id/json_transcript",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "The Drift conversationId"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a conversation's transcript as a JSON object"
+        },
+        {
+          "info": {
+            "name": "Drift Fetch a conversation's attachments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/attachments/:id/data",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "The Drift documentId"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a conversation's attachments"
+        },
+        {
+          "info": {
+            "name": "Drift Create a conversation",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/conversations/new",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Create a conversation"
+        },
+        {
+          "info": {
+            "name": "Drift List conversation statuses",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/conversations/stats"
+          },
+          "docs": "Drift List conversation statuses"
+        },
+        {
+          "info": {
+            "name": "Drift List conversations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/conversations/list",
+            "params": [
+              {
+                "name": "limit",
+                "value": "",
+                "type": "query",
+                "description": "Max number of conversations to retrieve (max 100, default 25)."
+              },
+              {
+                "name": "statusId",
+                "value": "",
+                "type": "query",
+                "description": "Return only conversations that match the provided status code. Uses the following values: OPEN, CLOSED, PENDING"
+              },
+              {
+                "name": "page_token",
+                "value": "",
+                "type": "query",
+                "description": "Allows you to move to the next page"
+              }
+            ]
+          },
+          "docs": "Drift List conversations"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

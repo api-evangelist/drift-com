@@ -1,0 +1,212 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts Contacts API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Contacts",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift List contacts by externalId",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/contacts",
+            "params": [
+              {
+                "name": "idType",
+                "value": "external",
+                "type": "query"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query",
+                "description": "Your unique externalId"
+              }
+            ]
+          },
+          "docs": "Drift List contacts by externalId"
+        },
+        {
+          "info": {
+            "name": "Drift Create a contact",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/contacts",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Create a contact"
+        },
+        {
+          "info": {
+            "name": "Fetch a contact by Drift Id",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/contacts/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Drift contactId"
+              }
+            ]
+          },
+          "docs": "Fetch a contact by Drift Id"
+        },
+        {
+          "info": {
+            "name": "Drift Delete a contact",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/contacts/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Drift Delete a contact"
+        },
+        {
+          "info": {
+            "name": "Update a contact - Drift Id",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "http://{{base_url}}/contacts/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Drift contactId"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a contact - Drift Id"
+        },
+        {
+          "info": {
+            "name": "Drift Update a contact - ExternalId",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "http://{{base_url}}/contacts/normalize",
+            "params": [
+              {
+                "name": "idType",
+                "value": "",
+                "type": "query",
+                "description": "One of drift, external, internal"
+              },
+              {
+                "name": "id",
+                "value": "",
+                "type": "query",
+                "description": "Your unique externalId"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Update a contact - ExternalId"
+        },
+        {
+          "info": {
+            "name": "Drift List contacts by email",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/contacts/",
+            "params": [
+              {
+                "name": "email",
+                "value": "",
+                "type": "query",
+                "description": "The email address of the requested contact"
+              }
+            ]
+          },
+          "docs": "Drift List contacts by email"
+        },
+        {
+          "info": {
+            "name": "Drift Unsubscribe contacts from emails",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/emails/unsubscribe",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Unsubscribe contacts from emails"
+        },
+        {
+          "info": {
+            "name": "Drift Post a timeline event to a contact - externalId",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/contacts/timeline",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Post a timeline event to a contact - externalId"
+        },
+        {
+          "info": {
+            "name": "Drift List custom contact attributes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/contacts/attributes"
+          },
+          "docs": "Drift List custom contact attributes"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

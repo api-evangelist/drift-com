@@ -1,0 +1,54 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts Data Privacy API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Data Privacy",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift Fetch GDPR data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/gdpr/retrieve",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Fetch GDPR data"
+        },
+        {
+          "info": {
+            "name": "Drift Delete GDPR data",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/gdpr/delete",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Delete GDPR data"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

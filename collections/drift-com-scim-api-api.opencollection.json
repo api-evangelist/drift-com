@@ -1,0 +1,95 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Drift Accounts SCIM API API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "SCIM API",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Drift List user objects",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/scim/Users"
+          },
+          "docs": "Drift List user objects"
+        },
+        {
+          "info": {
+            "name": "Drift Provision a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://{{base_url}}/scim/Users",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Provision a user"
+        },
+        {
+          "info": {
+            "name": "Drift Update a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "http://{{base_url}}/scim/Users",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Drift Update a user"
+        },
+        {
+          "info": {
+            "name": "Drift Deprovision a user",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "http://{{base_url}}/scim/Users"
+          },
+          "docs": "Drift Deprovision a user"
+        },
+        {
+          "info": {
+            "name": "Drift Fetch a user object",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "http://{{base_url}}/scim/Users/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path",
+                "description": "Drift userId"
+              }
+            ]
+          },
+          "docs": "Drift Fetch a user object"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
