@@ -40,6 +40,8 @@ apis:
   humanURL: https://devdocs.drift.com/
   baseURL: https://driftapi.com
   tags:
+  - Account
+  tags_raw:
   - Accounts
   properties:
   - type: OpenAPI
@@ -157,6 +159,8 @@ apis:
   humanURL: https://devdocs.drift.com/
   baseURL: https://driftapi.com
   tags:
+  - Team
+  tags_raw:
   - Teams
   properties:
   - type: OpenAPI
@@ -173,6 +177,8 @@ apis:
   humanURL: https://devdocs.drift.com/
   baseURL: https://driftapi.com
   tags:
+  - User
+  tags_raw:
   - Users
   properties:
   - type: OpenAPI
