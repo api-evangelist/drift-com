@@ -202,6 +202,9 @@ apis:
   - type: Authentication
     url: https://devdocs.drift.com/docs/authentication
 common:
+  - type: CapabilityMap
+    url: capabilities/drift-com-capability-edges.yml
+    name: Drift Business Capability Map
   - type: AgenticAccess
     url: agentic-access/drift-com-agentic-access.yml
   - type: DomainSecurity
