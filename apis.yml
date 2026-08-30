@@ -202,6 +202,11 @@ apis:
   - type: Authentication
     url: https://devdocs.drift.com/docs/authentication
 common:
+  - type: ParentCompany
+    url: https://apis.io/providers/salesloft/
+    name: Salesloft
+    x-relationship: acquired
+    x-evidence: "Drift was acquired by Salesloft in 2024 and now operates as the AI conversation surface within the Salesloft Revenue Orchestration Platform; the drift."
   - type: CapabilityMap
     url: capabilities/drift-com-capability-edges.yml
     name: Drift Business Capability Map
