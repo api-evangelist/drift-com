@@ -1,15 +1,7 @@
 {
   "provider": "drift-com",
   "sources": [
-    "drift-com-accounts-api-openapi.yml",
-    "drift-com-app-admin-api-openapi.yml",
-    "drift-com-contacts-api-openapi.yml",
-    "drift-com-conversations-and-messages-api-openapi.yml",
-    "drift-com-data-privacy-api-openapi.yml",
-    "drift-com-playbooks-api-openapi.yml",
-    "drift-com-scim-api-api-openapi.yml",
-    "drift-com-teams-api-openapi.yml",
-    "drift-com-users-api-openapi.yml"
+    "_original/drift-com-openapi.yml"
   ],
   "outputs": [
     "drift-com-accounts-api-openapi.yml",
@@ -25,6 +17,20 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "drift-com-openapi.yml: upgraded openapi 3.0.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "drift-com-accounts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-app-admin-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-contacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-conversations-and-messages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-data-privacy-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-playbooks-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-scim-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-teams-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "drift-com-users-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

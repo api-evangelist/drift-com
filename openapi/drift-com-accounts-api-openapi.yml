@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
   title: Drift Accounts API
   description: Drift is a cloud-based solution designed to help businesses automate sales processes by adding live chat windows to websites for increased customer experience and loyalty. Key features include chatbots, geo-targeting, offline access, proactive chating and transfers/routing.
@@ -36,6 +36,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: postAccountsCreate
+      x-operation-id-source: derived
   /accounts/{id}:
     get:
       tags:
@@ -53,6 +55,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: getAccountsById
+      x-operation-id-source: derived
     delete:
       tags:
       - Accounts
@@ -69,6 +73,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: deleteAccountsById
+      x-operation-id-source: derived
   /accounts:
     get:
       tags:
@@ -90,6 +96,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: getAccounts
+      x-operation-id-source: derived
   /accounts/update:
     patch:
       tags:
@@ -116,6 +124,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: patchAccountsUpdate
+      x-operation-id-source: derived
 components:
   securitySchemes:
     bearerAuth:

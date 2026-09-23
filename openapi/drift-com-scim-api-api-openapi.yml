@@ -1,6 +1,6 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  title: Drift Accounts SCIM API API
+  title: Drift SCIM API
   description: Drift is a cloud-based solution designed to help businesses automate sales processes by adding live chat windows to websites for increased customer experience and loyalty. Key features include chatbots, geo-targeting, offline access, proactive chating and transfers/routing.
   version: 1.0.0
 servers:
@@ -21,6 +21,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: getScimUsers
+      x-operation-id-source: derived
     post:
       tags:
       - SCIM API
@@ -53,6 +55,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: postScimUsers
+      x-operation-id-source: derived
     put:
       tags:
       - SCIM API
@@ -85,6 +89,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: putScimUsers
+      x-operation-id-source: derived
     delete:
       tags:
       - SCIM API
@@ -94,6 +100,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: deleteScimUsers
+      x-operation-id-source: derived
   /scim/Users/{id}:
     get:
       tags:
@@ -111,6 +119,8 @@ paths:
           description: Successful response
           content:
             application/json: {}
+      operationId: getScimUsersById
+      x-operation-id-source: derived
 components:
   securitySchemes:
     bearerAuth:
