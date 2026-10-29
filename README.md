@@ -1,4 +1,4 @@
-# Drift (drift-com)
+# Drift
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,70 +66,144 @@
 
 Drift is a conversational marketing and sales platform delivering AI-powered chatbots, live chat, video messaging, account-based engagement, and Fastlane playbook automation on B2B websites. Drift was acquired by Salesloft in 2024 and now operates as the AI conversation surface within the Salesloft Revenue Orchestration Platform; the drift.com domain redirects to salesloft.com/platform/drift while devdocs.drift.com continues to host the developer API documentation.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/drift-com/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/drift-com/refs/heads/main/apis.yml)
+**Areas:** Conversational Marketing · Chatbots · Sales · Messaging · Customer Engagement · Revenue Orchestration · AI Chat · Conversational AI
 
-## Tags
+## Drift on APIs.io
 
-- Conversational Marketing
-- Chatbots
-- Sales
-- Messaging
-- Customer Engagement
-- Revenue Orchestration
-- AI Chat
+Everything profiled for Drift is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/drift-com/](https://apis.io/providers/drift-com/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (9)
 
-- **Created:** 2026-05-25
-- **Modified:** 2026-05-25
+- [Drift Accounts API](https://apis.io/apis/drift-com/drift-com-accounts-api/) — The Accounts API from Drift — 4 operation(s) for accounts.
+- [Drift App Admin API](https://apis.io/apis/drift-com/drift-com-app-admin-api/) — [https://devdocs.drift.com/docs/app-uninstall](https://devdocs.drift.com/docs/app-uninstall)
+- [Drift Contacts API](https://apis.io/apis/drift-com/drift-com-contacts-api/) — [https://devdocs.drift.com/docs/contact-model](https://devdocs.drift.com/docs/contact-model)
+- [Drift Conversations and Messages API](https://apis.io/apis/drift-com/drift-com-conversations-and-messages-api/) — [https://devdocs.drift.com/docs/conversation-model](https://devdocs.drift.com/docs/conversation-model)
+- [Drift Data Privacy API](https://apis.io/apis/drift-com/drift-com-data-privacy-api/) — [https://devdocs.drift.com/docs/automating-gdpr-retrieval-and-deletion](https://devdocs.drift.com/docs/automating-gdpr-retrieval-and-deletion)
+- [Drift Playbooks API](https://apis.io/apis/drift-com/drift-com-playbooks-api/) — [https://devdocs.drift.com/docs/playbook-model-1](https://devdocs.drift.com/docs/playbook-model-1)
+- [Drift SCIM API](https://apis.io/apis/drift-com/drift-com-scim-api-api/) — The SCIM API API from Drift — 2 operation(s) for scim api.
+- [Drift Teams API](https://apis.io/apis/drift-com/drift-com-teams-api/) — [https://devdocs.drift.com/docs/team-model](https://devdocs.drift.com/docs/team-model)
+- [Drift Users API](https://apis.io/apis/drift-com/drift-com-users-api/) — [https://devdocs.drift.com/docs/user-model](https://devdocs.drift.com/docs/user-model)
 
-## APIs
+### Published properties
 
-### Drift REST API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Drift REST API covers contacts, users, conversations and messages, accounts, playbooks, teams, app admin tokens, data privacy (GDPR retrieval and deletion), and SCIM provisioning. Webhook events deliver realtime conversation, contact, and message updates. Authentication uses OAuth, App Admin Tokens, and signed identities as documented at devdocs.drift.com.
+#### Agentic access (1)
 
-- **Human URL:** [https://devdocs.drift.com/](https://devdocs.drift.com/)
-- **Base URL:** `https://driftapi.com`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Drift Com Agentic Access](https://apis.io/agentic-access/drift-com/drift-com-agentic-access/)
 
-- Messaging
-- Chatbots
-- REST
-- Conversations
-- SCIM
+#### JSON Structure (1)
 
-#### Properties
+Data models expressed in JSON Structure.
 
-- [Documentation](https://devdocs.drift.com/)
-- [API Reference](https://devdocs.drift.com/reference)
-- [Authentication](https://devdocs.drift.com/docs/authentication)
-- [OpenAPI](openapi/drift-com-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/drift-com.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/drift-com.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Drift Com Structure](https://apis.io/json-structure/drift-com/drift-com-structure/)
 
-## Common Properties
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [Drift Domain Vocabulary](https://apis.io/vocabularies/drift-com/drift-com-vocabulary/)
+
+#### Collections (11)
+
+Postman and Open Collection request collections.
+
+- [Drift](https://apis.io/collections/drift-com/open-drift/)
+- [Drift](https://apis.io/collections/drift-com/open-drift-com/)
+- [Drift Accounts API](https://apis.io/collections/drift-com/open-drift-com-accounts-api/)
+- [Drift Accounts App Admin API](https://apis.io/collections/drift-com/open-drift-com-app-admin-api/)
+- [Drift Accounts Contacts API](https://apis.io/collections/drift-com/open-drift-com-contacts-api/)
+- [Drift Accounts Conversations and Messages API](https://apis.io/collections/drift-com/open-drift-com-conversations-and-messages-api/)
+- [Drift Accounts Data Privacy API](https://apis.io/collections/drift-com/open-drift-com-data-privacy-api/)
+- [Drift Accounts Playbooks API](https://apis.io/collections/drift-com/open-drift-com-playbooks-api/)
+- [Drift Accounts SCIM API API](https://apis.io/collections/drift-com/open-drift-com-scim-api-api/)
+- [Drift Accounts Teams API](https://apis.io/collections/drift-com/open-drift-com-teams-api/)
+- [Drift Accounts Users API](https://apis.io/collections/drift-com/open-drift-com-users-api/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Drift Com Authentication](https://apis.io/security/drift-com/drift-com-authentication/)
+- [Drift Com Domain Security](https://apis.io/security/drift-com/drift-com-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Drift Com Plans Pricing](https://apis.io/plans/drift-com/drift-com-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Drift Com Rate Limits](https://apis.io/rate-limits/drift-com/drift-com-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Drift Com Finops](https://apis.io/finops/drift-com/drift-com-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.drift.com/)
 - [Documentation](https://devdocs.drift.com/)
-- [L L Ms Txt](https://devdocs.drift.com/llms.txt)
-- [Portal](https://app.drift.com/)
-- [GitHub Organization](https://github.com/Driftt)
-- [SDK](https://github.com/Driftt/drift-python)
-- [SDK](https://github.com/Driftt/drift-sdk-android)
-- [SDK](https://github.com/Driftt/drift-sdk-ios)
-- [Integrations](https://www.salesloft.com/platform/drift)
-- [LinkedIn](https://www.linkedin.com/company/drift)
-- [Plans](plans/drift-com-plans-pricing.yml)
-- [Rate Limits](rate-limits/drift-com-rate-limits.yml)
-- [Fin Ops](finops/drift-com-finops.yml)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
-- [Solutions](undefined)
+- [GitHub](https://github.com/Driftt)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 43.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 44.0 |
+| Access clarity | 5.3 |
+
+**Agent readiness 20.4** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/drift-com/](https://apis.io/providers/drift-com/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Drift: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/drift-com/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
